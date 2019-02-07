@@ -1,0 +1,106 @@
+<!-- Chrome on macOS 72.0.3626.96 -->
+<!-- MozillaFirefoz on macOS 64.0 -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Assignment 5</title>
+        <link href="styles/style5.css" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel="stylesheet">
+    </head>
+    <body>
+       <div class="container">
+           <div class="item header">
+               <img src="images/logo.png" alt="logo">
+               <a href="youtube.com">Home</a>
+               <a href="https://www.google.com/">Google</a>
+               <a href="https://www.linkedin.com">Linkedin</a>
+               <a href="https://www.youtube.com/">Youtube</a>
+           </div>
+           <div class="item middle">
+               <div class="side">
+                <a href="https://www.w3schools.com/html/default.asp">Html</a>
+                <a href="https://www.w3schools.com/css/default.asp">Css</a>
+                <a href="https://www.w3schools.com/js/default.asp">JavaScript</a>
+               </div> 
+               <div class="content"> 
+                <p>This short video explains how flexbox work in 20 minutes.</p>
+                <iframe width="350" height="250" src="https://www.youtube.com/embed/JJSoEo8JSnc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p class="text">
+                        Flexbox has opened the doors for lots of flexibility in our layouts and explaining all its power takes more that a post or even two. I will demonstrate different layouts with Flexbox explaining in a simple way with examples.
+
+                        First we need to know about Flexbox container properties and then its immediate children or Flexbox items properties and then combine them together to make the desired layout. I will show you the parent container’s properties first and we will build a layout using its properties.
+                        
+                        
+                         
+                        To set up the parent container as Flexbox just add display property like this:
+                        
+                        .flex-container{
+                        
+                          display: -webkit-flex; /* Safari */
+                        
+                          display: flex;
+                        
+                        }
+                        Or to show it just like an inline element:
+                        
+                        .flex-container {
+                        
+                          display: -webkit-inline-flex; /* Safari */
+                        
+                          display: inline-flex;
+                        
+                        }
+                        
+                        All children of the container automatically become flex-items. Now we explain each parent property and we will see them in an example:
+                        
+                        flex-direction
+                        It specifies how flex items are laid out in the parent container.They can be laid out in two main directions, like rows horizontally or like columns vertically.
+                        
+                        .flex-container {
+                           flex-direction: row | row-reverse | column | column-reverse;
+                        } 
+                        
+                        flex-wrap
+                        The initial flexbox concept is the container to set its items in one single line. The flex-wrap property controls if the flex container lay out its items in single or multiple lines, and the direction the new lines are stacked in.
+                        
+                        .flex-container {
+                           flex-wrap: nowrap | wrap | wrap-reverse;
+                        } 
+                        
+                        flex-flow
+                        This property is a shorthand for setting the flex-direction and flex-wrap properties.
+                        
+                        .flex-container {
+                           flex-flow: <‘flex-direction’> || <‘flex-wrap’>
+                        } 
+                        
+                        justify-content
+                        The justify-content property aligns flex items along the main axis of the current line of the flex container. It helps distribute left free space when either all the flex items on a line are inflexible, or are flexible but have reached their maximum size.
+                        
+                        .flex-container {
+                           justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly; 
+                        } 
+                        
+                        align-items
+                        Flex items can be aligned in the cross axis of the current line of the flex container, similar to justify-content but in the perpendicular direction. This property sets the default alignment for all flex items, including the anonymous ones.
+                        
+                        .flex-container {
+                           align-items: flex-start | flex-end | center | baseline | stretch;
+                        } 
+                        
+                        
+                </p>
+               </div>
+           </div>
+           <div class="item footer">
+               <a href="#">contact</a>
+               <a href="#">about</a>
+           </div>
+       </div>
+    </body>
+
+
+
+</html>
