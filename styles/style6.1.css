@@ -1,0 +1,40 @@
+div {
+    font-family: Verdana;
+    font-size: 50px;
+    border: 2px solid black;
+}
+.container {
+    display: grid;
+    background-color: gray;
+    height: 1000px;
+    grid-template-columns: 200px auto;
+    grid-template-rows: 100px 800px 100px;
+    grid-template-areas: 
+    "advert header"
+    "advert content"
+    "advert footer";
+}
+.header {
+    grid-area: header;
+}
+.sidebar {
+    grid-area: advert;
+}
+.content {
+    grid-area: content;
+}
+.footer {
+    grid-area: footer;
+}
+@media (max-width: 600px){
+    .container {
+        grid-template-rows: 80px 80px auto 80px;
+        grid-template-columns: auto;
+        grid-template-areas: 
+        "header"
+        "advert"
+        "content"
+        "footer"
+    }
+}
+
