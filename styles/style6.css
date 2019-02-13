@@ -1,0 +1,23 @@
+h1 {
+    font-size: 50px;
+    font-family: Verdana;
+}
+.container {
+    font-size: 20px;
+    background: gray;
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(7, minmax(5px, 1fr));
+    grid-template-rows: repeat(7, minmax(5px, 1fr));
+}
+div {
+    border: 1px solid black;
+    
+}
+.notjanuary {
+    background-color: lightgray;
+}
+.days {
+    font-weight: bold;
+}
