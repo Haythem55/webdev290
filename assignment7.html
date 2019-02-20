@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Calculator</title>
+
+    <style>
+       
+    </style>
+  </head>
+
+  <body>
+    <button class="increment">Increment number</button>
+    <button class="decrement">Decrement number</button>
+    <button class="startOver">Start Over</button>
+    <p class="num">0</p>
+    <p class="numbers">The number is: None</p>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+    <div ng-app="myApp" ng-controller="myCtrl">
+        First Name: <input type="text" ng-model="firstName"><br>
+        Last Name: <input type="text" ng-model="lastName"><br>
+        <br>
+        Full Name: {{firstName + " " + lastName}}
+            
+    </div>
+            
+    <script>
+        var app = angular.module('myApp', []);
+        app.controller('myCtrl', function($scope) {
+        $scope.firstName= "Haythem";
+        $scope.lastName= "Jlassi";
+        });
+    </script>
+  </body>
+
+<script src="scripts/main.js"></script>
+</html>
